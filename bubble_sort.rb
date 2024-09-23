@@ -10,7 +10,7 @@ def bubble_sort(arr)
         arr[i], arr[i + 1] = arr[i + 1], arr[i] # swap them and remember something changed
         swapped = true
 
-      # p arr (print the array after each swap (for debugging))
+      # p arr # print the array after each swap (for debugging)
       end
     end
 
