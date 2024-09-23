@@ -4,18 +4,22 @@ def bubble_sort(arr)
 
   loop do
     swapped = false
-    for i in 1...n do
-      if arr[i - 1] > arr [i] then
-        arr[i - 1], arr[i] = arr[i], arr[i - 1] # elements swap
+    
+    for i in 0...(n - 1) do
+      if arr[i] > arr [i + 1] then
+        arr[i], arr[i + 1] = arr[i + 1], arr[i] # swap them and remember something changed
         swapped = true
 
-        p arr
+      # p arr (print the array after each swap (for debugging))
       end
     end
 
-    n -= 1
     break unless swapped
+
+    n -= 1
   end
+
+  arr
 end
 
 bubble_sort([4,3,78,2,0,2])
