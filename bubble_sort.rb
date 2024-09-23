@@ -4,7 +4,7 @@ def bubble_sort(arr)
 
   loop do
     swapped = false
-    for i in 0...n do
+    for i in 1...n do
       if arr[i - 1] > arr [i] then
         arr[i - 1], arr[i] = arr[i], arr[i - 1] # elements swap
         swapped = true
@@ -14,9 +14,7 @@ def bubble_sort(arr)
     end
 
     n -= 1
-    if swapped == false
-      break
-    end
+    break unless swapped
   end
 end
 
