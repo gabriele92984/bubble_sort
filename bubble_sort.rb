@@ -5,8 +5,8 @@ def bubble_sort(arr)
   loop do
     swapped = false
     
-    for i in 0...(n - 1) do
-      if arr[i] > arr [i + 1] then
+    for i in 0...(n - 1)
+      if arr[i] > arr [i + 1]
         arr[i], arr[i + 1] = arr[i + 1], arr[i] # swap them and remember something changed
         swapped = true
 
